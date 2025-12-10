@@ -12,6 +12,7 @@ services:
     volumes:
       - clickhouse_data:/var/lib/clickhouse
       - ./.config/users.d/default-password.xml:/etc/clickhouse-server/users.d/default-password.xml:ro
+      - ./.config/config.d/allow_drop.xml:/etc/clickhouse-server/config.d/allow_drop.xml:ro
       - ./.config/prometheus.xml:/etc/clickhouse-server/config.d/prometheus.xml:ro
     ulimits:
       nofile:
