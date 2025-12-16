@@ -13,6 +13,9 @@
                     <volume_main>
                         <disk>default</disk>
                     </volume_main>
+                    <volume_ingestion>
+                        <disk>ingestion_disk</disk>
+                    </volume_ingestion>
                 </volumes>
             </live_data_policy>
 
@@ -21,6 +24,9 @@
                     <volume_staging>
                         <disk>ingestion_disk</disk>
                     </volume_staging>
+                    <volume_main>
+                        <disk>default</disk>
+                    </volume_main>
                 </volumes>
             </ingestion_temp_policy>
         </policies>
