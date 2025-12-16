@@ -21,9 +21,9 @@
 
             <ingestion_temp_policy>
                 <volumes>
-                    <volume_staging>
+                    <volume_ingestion>
                         <disk>ingestion_disk</disk>
-                    </volume_staging>
+                    </volume_ingestion>
                     <volume_main>
                         <disk>default</disk>
                     </volume_main>
