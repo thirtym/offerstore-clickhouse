@@ -13,6 +13,7 @@ services:
       - clickhouse_data:/var/lib/clickhouse
       - /mnt/data:/mnt/data
       - ./.config/config.d/disks.xml:/etc/clickhouse-server/config.d/disks.xml:ro
+      - ./.config/config.d/listen.xml:/etc/clickhouse-server/config.d/listen.xml:ro
       - ./.config/users.d/default-password.xml:/etc/clickhouse-server/users.d/default-password.xml:ro
       - ./.config/config.d/allow_drop.xml:/etc/clickhouse-server/config.d/allow_drop.xml:ro
       - ./.config/prometheus.xml:/etc/clickhouse-server/config.d/prometheus.xml:ro

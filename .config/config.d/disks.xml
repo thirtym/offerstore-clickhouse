@@ -1,10 +1,6 @@
 <yandex>
     <storage_configuration>
         <disks>
-            <default_disk>
-                <path>/var/lib/clickhouse/</path>
-            </default_disk>
-
             <ingestion_disk>
                 <path>/mnt/data/</path>
                 <keep_free_space_bytes>107374182400</keep_free_space_bytes>
@@ -15,7 +11,7 @@
             <live_data_policy>
                 <volumes>
                     <volume_main>
-                        <disk>default_disk</disk>
+                        <disk>default</disk>
                     </volume_main>
                 </volumes>
             </live_data_policy>
