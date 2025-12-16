@@ -22,7 +22,7 @@ services:
         soft: 524288
         hard: 524288
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://127.0.0.1:8123/ping" ]
+      test: [ "CMD", "wget", "--spider", "-q", "http://127.0.0.1:8123/ping" ]
       interval: 10s
       timeout: 5s
       retries: 5
