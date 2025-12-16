@@ -1,0 +1,32 @@
+<yandex>
+    <storage_configuration>
+        <disks>
+            <default_disk>
+                <path>/var/lib/clickhouse/</path>
+            </default_disk>
+
+            <ingestion_disk>
+                <path>/mnt/data/</path>
+                <keep_free_space_bytes>107374182400</keep_free_space_bytes>
+            </ingestion_disk>
+        </disks>
+
+        <policies>
+            <live_data_policy>
+                <volumes>
+                    <volume_main>
+                        <disk>default_disk</disk>
+                    </volume_main>
+                </volumes>
+            </live_data_policy>
+
+            <ingestion_temp_policy>
+                <volumes>
+                    <volume_staging>
+                        <disk>ingestion_disk</disk>
+                    </volume_staging>
+                </volumes>
+            </ingestion_temp_policy>
+        </policies>
+    </storage_configuration>
+</yandex>
