@@ -14,6 +14,7 @@ services:
       - /mnt/data:/mnt/data
       - ./.config/config.d/disks.xml:/etc/clickhouse-server/config.d/disks.xml:ro
       - ./.config/config.d/listen.xml:/etc/clickhouse-server/config.d/listen.xml:ro
+      - ./.config/config.d/logger.xml:/etc/clickhouse-server/config.d/logger.xml:ro
       - ./.config/config.d/drop_limits.xml:/etc/clickhouse-server/config.d/drop_limits.xml:ro
       - ./.config/users.d/default-password.xml:/etc/clickhouse-server/users.d/default-password.xml:ro
 
