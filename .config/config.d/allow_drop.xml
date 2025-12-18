@@ -1,8 +1,0 @@
-<clickhouse>
-    <profiles>
-        <default>
-            <allow_drop_table>true</allow_drop_table>
-            <allow_drop_database>true</allow_drop_database>
-        </default>
-    </profiles>
-</clickhouse>
