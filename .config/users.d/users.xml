@@ -1,0 +1,5 @@
+<profiles>
+    <default>
+        <allow_drop_table>true</allow_drop_table>
+    </default>
+</profiles>
