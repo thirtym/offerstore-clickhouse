@@ -12,7 +12,6 @@ services:
     volumes:
       - clickhouse_data:/var/lib/clickhouse
       - /mnt/data:/mnt/data
-      - ./.config/force_drop_table:/var/lib/clickhouse/flags/force_drop_table
       - ./.config/config.d/disks.xml:/etc/clickhouse-server/config.d/disks.xml:ro
       - ./.config/config.d/listen.xml:/etc/clickhouse-server/config.d/listen.xml:ro
       - ./.config/config.d/drop_limits.xml:/etc/clickhouse-server/config.d/drop_limits.xml:ro
